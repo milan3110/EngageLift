@@ -58,9 +58,9 @@ const FAQ = () => {
                 key={index}
                 className="bg-gray-50 rounded-xl border border-gray-100 hover:border-blue-200 transition-all duration-300"
               >
-                <button
+                <div
                   onClick={() => toggleFAQ(index)}
-                  className="w-full flex items-center justify-between p-6 text-left hover:bg-gray-100 
+                  className="w-full cursor-pointer flex items-center justify-between p-6 text-left hover:bg-gray-100 
                            rounded-xl transition-colors duration-300"
                 >
                   <h3 className="text-lg font-semibold text-gray-900 pr-4">
@@ -71,7 +71,7 @@ const FAQ = () => {
                       openIndex === index ? 'transform rotate-180 text-blue-600' : ''
                     }`}
                   />
-                </button>
+                </div>
                 
                 <div className={`overflow-hidden transition-all duration-300 ${
                   openIndex === index ? 'max-h-96 pb-6' : 'max-h-0'

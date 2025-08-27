@@ -5,11 +5,11 @@ const Pricing = () => {
   const packages = [
     {
       name: "Starter",
-      price: "₹15,000",
+      price: "₹5,000",
       period: "/month",
       description: "Perfect for small businesses getting started",
       features: [
-        "12 high-quality posts",
+        "5 high-quality posts",
         "Basic social media management",
         "Community engagement",
         "Monthly analytics report",
@@ -20,15 +20,14 @@ const Pricing = () => {
     },
     {
       name: "Growth",
-      price: "₹25,000",
+      price: "₹10,000",
       period: "/month",
       description: "Ideal for growing businesses",
       features: [
-        "20 premium posts + stories",
+        "10 posts + stories",
         "Advanced social media management",
         "Paid ads management",
         "Community engagement",
-        "Bi-weekly strategy calls",
         "Detailed analytics & insights",
         "Priority support"
       ],
@@ -37,15 +36,14 @@ const Pricing = () => {
     },
     {
       name: "Pro",
-      price: "₹40,000+",
+      price: "₹15,000",
       period: "/month",
       description: "Complete social media solution",
       features: [
-        "30+ posts + stories + reels",
+        "15+ premium posts + stories",
         "Full social media management",
         "Advanced paid ads campaigns",
         "Influencer collaborations",
-        "Weekly strategy sessions",
         "Custom content creation",
         "24/7 priority support",
         "Dedicated account manager"
@@ -115,21 +113,21 @@ const Pricing = () => {
                       : 'bg-gray-100 text-gray-900 hover:bg-gray-200'
                   }`}
                 >
-                  📩 {pkg.buttonText}
+                  {pkg.buttonText}
                 </button>
               </div>
             </div>
           ))}
         </div>
 
-        <div className="text-center mt-12">
+        {/* <div className="text-center mt-12">
           <p className="text-gray-600 mb-4">
             Need a custom solution? We'd love to discuss your specific requirements.
           </p>
           <button className="text-blue-600 font-semibold hover:text-blue-700 transition-colors duration-300">
             Contact us for custom pricing →
           </button>
-        </div>
+        </div> */}
       </div>
     </section>
   );

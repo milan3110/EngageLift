@@ -6,26 +6,26 @@ const Services = () => {
     {
       icon: Smartphone,
       title: "Social Media Management",
-      description: "Daily posts, stories, and engagement",
-      features: ["Community management", "Content scheduling", "Real-time engagement"]
-    },
-    {
-      icon: Palette,
-      title: "Content Strategy",
-      description: "Custom calendars, creative captions",
-      features: ["Branding alignment", "Creative campaigns", "Visual storytelling"]
+      description: "Consistent posting, community engagement & brand presence",
+      features: ["Build & nurture your audience", "Stress-free content scheduling", "Real-time engagement that drives loyalty"]
     },
     {
       icon: TrendingUp,
       title: "Paid Ads & Growth",
       description: "Facebook & Instagram Ads",
-      features: ["Audience targeting", "Budget optimization", "ROI tracking"]
+      features: ["Hyper-targeted audience campaigns", "Smart budget optimization", "Clear ROI & conversion tracking"]
+    },
+    {
+      icon: Palette,
+      title: "Content Strategy",
+      description: "Tailored strategies to amplify your brand voice",
+      features: ["Align content with your brand identity", "Creative campaigns that capture attention", "Visual storytelling that connects with your audience"]
     },
     {
       icon: BarChart3,
       title: "Analytics & Reporting",
-      description: "Monthly growth reports",
-      features: ["Clear ROI insights", "Performance metrics", "Growth strategies"]
+      description: "Data that turns insights into action",
+      features: ["Transparent ROI insights", "Detailed performance tracking", "Growth strategies backed by numbers"]
     }
   ];
 
@@ -69,10 +69,12 @@ const Services = () => {
         </div>
 
         <div className="text-center">
-          <button className="group bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold 
+          <button onClick={() => {
+              window.location.href = 'https://wa.me/919558114763';
+            }} className="group bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold 
                            hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 
                            shadow-lg hover:shadow-xl flex items-center mx-auto gap-3">
-            📩 Get My Free Strategy Call
+            To Get Free Strategy Call
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
           </button>
         </div>

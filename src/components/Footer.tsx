@@ -1,5 +1,5 @@
 import React from 'react';
-import { Instagram, Linkedin, Mail, Phone, ArrowUp } from 'lucide-react';
+import { Instagram, Linkedin, Mail, Phone, ArrowUp, TrendingUp } from 'lucide-react';
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -31,7 +31,7 @@ const Footer = () => {
         { name: "FAQ", href: "#faq" },
         { name: "Pricing", href: "#pricing" },
         { name: "Blog", href: "#" },
-        { name: "Case Studies", href: "#portfolio" }
+        // { name: "Case Studies", href: "#portfolio" }
       ]
     }
   ];
@@ -63,17 +63,16 @@ const Footer = () => {
           <div className="lg:col-span-1">
             <div className="flex items-center mb-6">
               <div className="w-10 h-10 bg-blue-500 rounded-xl flex items-center justify-center mr-3">
-                <span className="font-bold text-lg">E</span>
+                <span className="font-bold text-lg"><TrendingUp /></span>
               </div>
               <span className="text-2xl font-bold">EngageLift</span>
             </div>
             
             <p className="text-gray-400 mb-6 leading-relaxed">
-              Helping brands grow on social media through strategic content, 
-              creative campaigns, and data-driven insights.
+              Empowering brands and influencers to grow on social media through strategic content, innovative campaigns, and data-driven insights.
             </p>
             
-            <div className="flex space-x-4">
+            {/* <div className="flex space-x-4">
               {socialLinks.map((social, index) => (
                 <a
                   key={index}
@@ -87,7 +86,7 @@ const Footer = () => {
                   <social.icon className="w-5 h-5" />
                 </a>
               ))}
-            </div>
+            </div> */}
           </div>
 
           {/* Footer Links */}
@@ -112,7 +111,7 @@ const Footer = () => {
         </div>
 
         {/* Newsletter Signup */}
-        <div className="border-t border-gray-800 pt-12 mb-12">
+        {/* <div className="border-t border-gray-800 pt-12 mb-12">
           <div className="max-w-2xl mx-auto text-center">
             <h3 className="text-2xl font-bold mb-4">Stay Updated with Our Latest Tips</h3>
             <p className="text-gray-400 mb-6">
@@ -137,7 +136,7 @@ const Footer = () => {
               </button>
             </form>
           </div>
-        </div>
+        </div> */}
 
         {/* Bottom Footer */}
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
@@ -160,7 +159,7 @@ const Footer = () => {
       </div>
 
       {/* Back to Top Button */}
-      <button
+      {/* <button
         onClick={scrollToTop}
         className="fixed bottom-8 right-8 w-12 h-12 bg-blue-600 text-white rounded-full 
                  shadow-lg hover:bg-blue-700 hover:shadow-xl transition-all duration-300 
@@ -168,7 +167,7 @@ const Footer = () => {
         aria-label="Back to top"
       >
         <ArrowUp className="w-6 h-6" />
-      </button>
+      </button> */}
     </footer>
   );
 };

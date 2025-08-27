@@ -20,8 +20,8 @@ function App() {
       <About />
       <Services />
       <WhyChooseUs />
-      <Portfolio />
-      <Testimonials />
+      {/* <Portfolio /> */}
+      {/* <Testimonials /> */}
       <Pricing />
       <FAQ />
       <CTA />

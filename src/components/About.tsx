@@ -5,18 +5,18 @@ const About = () => {
   const highlights = [
     {
       icon: CheckCircle,
-      title: "Affordable packages for small businesses",
-      description: "Tailored solutions that fit your budget"
+      title: "Smart, affordable packages",
+      description: "Designed to fit small business budgets."
     },
     {
       icon: Heart,
-      title: "Personal attention for every client",
-      description: "Dedicated account manager for your success"
+      title: "Personal support for every client",
+      description: "Your own dedicated account manager"
     },
     {
       icon: TrendingUp,
-      title: "Proven growth strategies",
-      description: "Data-driven approach with measurable results"
+      title: "Proven strategies that deliver",
+      description: "Data-driven, measurable growth"
     }
   ];
 
@@ -29,8 +29,7 @@ const About = () => {
           </h2>
           
           <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-            At EngageLift, we help businesses turn followers into paying customers by combining 
-            creativity, strategy, and data.
+            At EngageLift, we transform social media followers into real business growth using creativity, strategy, and data.
           </p>
           
           <div className="bg-blue-50 p-8 rounded-2xl mb-12 border-l-4 border-blue-500">

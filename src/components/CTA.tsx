@@ -15,7 +15,7 @@ const CTA = () => {
         <div className="max-w-4xl mx-auto">
           <div className="flex justify-center mb-8">
             <div className="w-20 h-20 bg-white bg-opacity-20 rounded-full flex items-center justify-center">
-              <Rocket className="w-10 h-10 text-white animate-bounce" />
+              <div className="w-10 h-10 text-white animate-bounce text-[35px]">🚀</div>
             </div>
           </div>
 
@@ -29,14 +29,16 @@ const CTA = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-            <button className="group bg-white text-blue-700 px-8 py-4 rounded-full text-lg font-bold 
+            {/* <button className="group bg-white text-blue-700 px-8 py-4 rounded-full text-lg font-bold 
                              hover:bg-blue-50 transition-all duration-300 transform hover:scale-105 
                              shadow-2xl hover:shadow-3xl flex items-center gap-3">
               📩 Book Free Consultation
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
-            </button>
+            </button> */}
             
-            <button className="group text-white border-2 border-white px-8 py-4 rounded-full text-lg font-semibold 
+            <button onClick={() => {
+              window.location.href = 'https://wa.me/919558114763';
+            }} className="group text-white border-2 border-white px-8 py-4 rounded-full text-lg font-semibold 
                              hover:bg-white hover:text-blue-700 transition-all duration-300 transform hover:scale-105">
               💬 Chat with Us on WhatsApp
             </button>

@@ -42,12 +42,12 @@ const Contact = () => {
       icon: MessageCircle,
       label: "WhatsApp",
       value: "Chat with our team",
-      action: "https://wa.me/1234567890"
+      action: "https://wa.me/919558114763"
     },
     {
       icon: Phone,
       label: "Call Us",
-      value: "+91 98765 43210",
+      value: "+91 95581 14763",
       action: "tel:+919876543210"
     }
   ];
@@ -56,13 +56,13 @@ const Contact = () => {
     {
       icon: Instagram,
       label: "Instagram",
-      url: "https://instagram.com/engagelift"
+      url: "https://www.instagram.com/engagelift_official?igsh=ZnR5c2RwcDRnNzM1&utm_source=qr"
     },
-    {
-      icon: Linkedin,
-      label: "LinkedIn",
-      url: "https://linkedin.com/company/engagelift"
-    }
+    // {
+    //   icon: Linkedin,
+    //   label: "LinkedIn",
+    //   url: "https://linkedin.com/company/engagelift"
+    // }
   ];
 
   return (
@@ -79,7 +79,7 @@ const Contact = () => {
 
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* Contact Form */}
-          <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
+          {/* <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
             <h3 className="text-2xl font-bold text-gray-900 mb-6">Send us a message</h3>
             
             <form onSubmit={handleSubmit} className="space-y-6">
@@ -185,7 +185,7 @@ const Contact = () => {
                 )}
               </button>
             </form>
-          </div>
+          </div> */}
 
           {/* Contact Information */}
           <div className="space-y-8">
@@ -210,8 +210,9 @@ const Contact = () => {
                 ))}
               </div>
             </div>
+          </div>
 
-            <div>
+            <div className='flex flex-col gap-5'>
               <h4 className="text-xl font-bold text-gray-900 mb-4">Follow Us</h4>
               <div className="flex space-x-4">
                 {socialLinks.map((social, index) => (
@@ -220,14 +221,13 @@ const Contact = () => {
                     href={social.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center 
-                             hover:bg-blue-700 transition-all duration-300 transform hover:scale-110 shadow-lg"
+                    className="w-12 h-12 bg-pink-100 rounded-xl flex items-center justify-center 
+                             hover:bg-pink-300 transition-all duration-300 transform hover:scale-110 shadow-lg"
                   >
-                    <social.icon className="w-6 h-6 text-white" />
+                    <social.icon className="w-6 h-6 text-pink-700" />
                   </a>
                 ))}
               </div>
-            </div>
 
             <div className="bg-blue-50 p-6 rounded-xl border border-blue-100">
               <h4 className="font-bold text-gray-900 mb-2">Quick Response Guarantee</h4>
@@ -236,7 +236,7 @@ const Contact = () => {
                 reach out via WhatsApp for immediate assistance.
               </p>
             </div>
-          </div>
+            </div>
         </div>
       </div>
     </section>
