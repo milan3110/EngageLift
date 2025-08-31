@@ -122,36 +122,35 @@ const Header = () => {
         </div>
 
         {/* Mobile Menu */}
-        <div className={`md:hidden transition-all duration-300 overflow-hidden ${
-          isMenuOpen ? 'max-h-96 pb-6' : 'max-h-0'
-        }`}>
-          <nav className="flex flex-col space-y-4 pt-4 border-t border-white/20">
-            {navItems.map((item) => (
-              <button
-                key={item.name}
-                onClick={() => scrollToSection(item.href)}
-                className={`text-left font-medium transition-colors duration-300 py-2 ${
-                  isScrolled 
-                    ? 'text-gray-700 hover:text-blue-600' 
-                    : 'text-white/90 hover:text-white'
-                }`}
-              >
-                {item.name}
-              </button>
-            ))}
-            <button 
-              onClick={() => scrollToSection('#contact')}
-              className={`mt-4 px-6 py-3 rounded-full font-semibold transition-all duration-300 text-center ${
-                isScrolled 
-                  ? 'bg-blue-600 text-white hover:bg-blue-700' 
-                  : 'bg-white text-blue-600 hover:bg-blue-50'
-              }`}
-            >
-              📩 Get Started
-            </button>
-          </nav>
-        </div>
-      </div>
+        <div
+  className={`md:hidden transition-all duration-300 overflow-hidden -mx-6 ${
+    isMenuOpen ? 'max-h-screen' : 'max-h-0'
+  }`}
+>
+  <nav className="bg-white border-t border-gray-200 shadow-sm">
+    <ul className="flex flex-col divide-y divide-gray-100">
+      {navItems.map((item) => (
+        <li key={item.name}>
+          <button
+            onClick={() => scrollToSection(item.href)}
+            className="w-full text-left px-6 py-4 font-medium text-gray-800 hover:bg-gray-50 hover:text-blue-600 transition-colors"
+          >
+            {item.name}
+          </button>
+        </li>
+      ))}
+      <li className="p-4">
+        <button
+          onClick={() => scrollToSection('#contact')}
+          className="w-full px-6 py-3 rounded-full font-semibold bg-blue-600 text-white hover:bg-blue-700 transition-colors"
+        >
+          📩 Get Started
+        </button>
+      </li>
+    </ul>
+  </nav>
+</div>
+    </div>
     </header>
   );
 };
