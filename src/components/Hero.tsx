@@ -54,14 +54,14 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center animate-fade-in-up animation-delay-400">
-            <button onClick={() => {
+            {/* <button onClick={() => {
               window.location.href = '';
             }} className="group bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-semibold 
                              hover:bg-blue-50 transition-all duration-300 transform hover:scale-105 
                              shadow-2xl hover:shadow-3xl flex items-center gap-3 hover-glow flex items-center gap-3">
               <Play className="w-5 h-5 ml-0.5" /> Watch Our Story
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
-            </button>
+            </button> */}
             
             {/* <button className="group flex items-center gap-3 text-white font-semibold hover:text-blue-200 transition-all duration-300">
               <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center group-hover:bg-white/30 transition-all duration-300">
